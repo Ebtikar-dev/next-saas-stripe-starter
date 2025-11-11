@@ -81,26 +81,26 @@ export function NavBar({ scroll = false }: NavBarProps) {
 
         <div className="flex items-center space-x-3">
           {/* right header for docs */}
-          {documentation ? (
-            <div className="hidden flex-1 items-center space-x-4 sm:justify-end lg:flex">
-              <div className="hidden lg:flex lg:grow-0">
-                <DocsSearch />
-              </div>
-              <div className="flex lg:hidden">
-                <Icons.search className="size-6 text-muted-foreground" />
-              </div>
-              <div className="flex space-x-4">
-                <Link
-                  href={siteConfig.links.github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Icons.gitHub className="size-7" />
-                  <span className="sr-only">جيت هاب</span>
-                </Link>
-              </div>
-            </div>
-          ) : null}
+          {/*{documentation ? (*/}
+          {/*  <div className="hidden flex-1 items-center space-x-4 sm:justify-end lg:flex">*/}
+          {/*    <div className="hidden lg:flex lg:grow-0">*/}
+          {/*      <DocsSearch />*/}
+          {/*    </div>*/}
+          {/*    <div className="flex lg:hidden">*/}
+          {/*      <Icons.search className="size-6 text-muted-foreground" />*/}
+          {/*    </div>*/}
+          {/*    <div className="flex space-x-4">*/}
+          {/*      <Link*/}
+          {/*        href={siteConfig.links.github}*/}
+          {/*        target="_blank"*/}
+          {/*        rel="noreferrer"*/}
+          {/*      >*/}
+          {/*        <Icons.gitHub className="size-7" />*/}
+          {/*        <span className="sr-only">جيت هاب</span>*/}
+          {/*      </Link>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*) : null}*/}
           <ModeToggle />
 
           {session ? (
