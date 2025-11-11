@@ -81,7 +81,7 @@ export function NavMobile() {
                     onClick={() => setOpen(false)}
                     className="flex w-full font-medium capitalize"
                   >
-                    Admin
+                    لوحة تحكم المسؤول
                   </Link>
                 </li>
               ) : null}
@@ -92,7 +92,7 @@ export function NavMobile() {
                   onClick={() => setOpen(false)}
                   className="flex w-full font-medium capitalize"
                 >
-                  Dashboard
+                  لوحة القيادة
                 </Link>
               </li>
             </>
@@ -104,7 +104,7 @@ export function NavMobile() {
                   onClick={() => setOpen(false)}
                   className="flex w-full font-medium capitalize"
                 >
-                  Login
+                  تسجيل الدخول
                 </Link>
               </li>
 
@@ -114,7 +114,7 @@ export function NavMobile() {
                   onClick={() => setOpen(false)}
                   className="flex w-full font-medium capitalize"
                 >
-                  Sign up
+                  التسجيل
                 </Link>
               </li>
             </>
@@ -130,7 +130,7 @@ export function NavMobile() {
         <div className="mt-5 flex items-center justify-end space-x-4">
           <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
             <Icons.gitHub className="size-6" />
-            <span className="sr-only">GitHub</span>
+            <span className="sr-only">جيت هاب</span>
           </Link>
           <ModeToggle />
         </div>

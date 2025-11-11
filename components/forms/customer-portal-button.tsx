@@ -24,7 +24,7 @@ export function CustomerPortalButton({
       {isPending ? (
         <Icons.spinner className="mr-2 size-4 animate-spin" />
       ) : null}
-      Open Customer Portal
+      فتح بوابة العملاء
     </Button>
   );
 }

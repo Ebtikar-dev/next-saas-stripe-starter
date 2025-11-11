@@ -91,7 +91,7 @@ export function DashboardSidebar({ links }: DashboardSidebarProps) {
                       className="stroke-muted-foreground"
                     />
                   )}
-                  <span className="sr-only">Toggle Sidebar</span>
+                  <span className="sr-only">تبديل الشريط الجانبي</span>
                 </Button>
               </div>
 
@@ -193,7 +193,7 @@ export function MobileSheetSidebar({ links }: DashboardSidebarProps) {
             className="size-9 shrink-0 md:hidden"
           >
             <Menu className="size-5" />
-            <span className="sr-only">Toggle navigation menu</span>
+            <span className="sr-only">تبديل قائمة التنقل</span>
           </Button>
         </SheetTrigger>
         <SheetContent side="left" className="flex flex-col p-0">

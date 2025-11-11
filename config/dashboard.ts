@@ -4,48 +4,54 @@ import { SidebarNavItem } from "types";
 
 export const sidebarLinks: SidebarNavItem[] = [
   {
-    title: "MENU",
+    title: "القائمة",
     items: [
       {
         href: "/admin",
         icon: "laptop",
-        title: "Admin Panel",
+        title: "لوحة تحكم المسؤول",
         authorizeOnly: UserRole.ADMIN,
       },
-      { href: "/dashboard", icon: "dashboard", title: "Dashboard" },
+      {
+        href: "/dashboard/teacher",
+        icon: "user",
+        title: "لوحة تحكم المعلم",
+        authorizeOnly: UserRole.TEACHER,
+      },
+      { href: "/dashboard", icon: "dashboard", title: "لوحة القيادة" },
       {
         href: "/dashboard/billing",
         icon: "billing",
-        title: "Billing",
+        title: "الفواتير",
         authorizeOnly: UserRole.USER,
       },
-      { href: "/dashboard/charts", icon: "lineChart", title: "Charts" },
+      { href: "/dashboard/charts", icon: "lineChart", title: "الرسوم البيانية" },
       {
         href: "/admin/orders",
         icon: "package",
-        title: "Orders",
+        title: "الطلبات",
         badge: 2,
         authorizeOnly: UserRole.ADMIN,
       },
       {
         href: "#/dashboard/posts",
         icon: "post",
-        title: "User Posts",
+        title: "منشورات المستخدم",
         authorizeOnly: UserRole.USER,
         disabled: true,
       },
     ],
   },
   {
-    title: "OPTIONS",
+    title: "خيارات",
     items: [
-      { href: "/dashboard/settings", icon: "settings", title: "Settings" },
-      { href: "/", icon: "home", title: "Homepage" },
-      { href: "/docs", icon: "bookOpen", title: "Documentation" },
+      { href: "/dashboard/settings", icon: "settings", title: "الإعدادات" },
+      { href: "/", icon: "home", title: "الصفحة الرئيسية" },
+      { href: "/docs", icon: "bookOpen", title: "المستندات" },
       {
         href: "#",
         icon: "messages",
-        title: "Support",
+        title: "الدعم الفني",
         authorizeOnly: UserRole.USER,
         disabled: true,
       },

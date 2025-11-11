@@ -2,50 +2,50 @@ import { FeatureLdg, InfoLdg, TestimonialType } from "types";
 
 export const infos: InfoLdg[] = [
   {
-    title: "Empower your projects",
+    title: "عزز رحلتك التعليمية",
     description:
-      "Unlock the full potential of your projects with our open-source SaaS platform. Collaborate seamlessly, innovate effortlessly, and scale limitlessly.",
+      "اكتشف الإمكانات الكاملة لتعلم القرآن الكريم وعلومه من خلال منصتنا التعليمية المتكاملة. تعاون بسلاسة، ابتكر بلا جهد، وتوسع بلا حدود.",
     image: "/_static/illustrations/work-from-home.jpg",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
+        title: "تعاوني",
+        description: "ادرس وتفاعل مع زملائك ومعلميك في الوقت الفعلي.",
         icon: "laptop",
       },
       {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
+        title: "مبتكر",
+        description: "ابقَ في الطليعة مع تحديثات مستمرة ومحتوى متجدد.",
         icon: "settings",
       },
       {
-        title: "Scalable",
+        title: "قابل للتوسع",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+          "منصتنا توفر المرونة اللازمة للتكيف مع احتياجاتك التعليمية.",
         icon: "search",
       },
     ],
   },
   {
-    title: "Seamless Integration",
+    title: "تكامل سلس",
     description:
-      "Integrate our open-source SaaS seamlessly into your existing workflows. Effortlessly connect with your favorite tools and services for a streamlined experience.",
+      "ادمج منصتنا التعليمية بسلاسة في روتينك اليومي. تواصل بسهولة مع أدواتك وخدماتك المفضلة لتجربة تعليمية مبسطة.",
     image: "/_static/illustrations/work-from-home.jpg",
     list: [
       {
-        title: "Flexible",
+        title: "مرن",
         description:
-          "Customize your integrations to fit your unique requirements.",
+          "خصص تجربتك التعليمية لتناسب متطلباتك الفريدة.",
         icon: "laptop",
       },
       {
-        title: "Efficient",
-        description: "Streamline your processes and reducing manual effort.",
+        title: "فعال",
+        description: "بسط عملياتك وقلل الجهد اليدوي.",
         icon: "search",
       },
       {
-        title: "Reliable",
+        title: "موثوق",
         description:
-          "Rely on our robust infrastructure and comprehensive documentation.",
+          "اعتمد على بنيتنا التحتية القوية ووثائقنا الشاملة.",
         icon: "settings",
       },
     ],
@@ -54,44 +54,44 @@ export const infos: InfoLdg[] = [
 
 export const features: FeatureLdg[] = [
   {
-    title: "Feature 1",
+    title: "تعليم القرآن",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
+      "تعلم القرآن الكريم بالتجويد والحفظ على يد معلمين متخصصين.",
     link: "/",
     icon: "nextjs",
   },
   {
-    title: "Feature 2",
+    title: "دروس تفاعلية",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
+      "شارك في دروس تفاعلية مباشرة مع المعلمين والطلاب الآخرين.",
     link: "/",
     icon: "google",
   },
   {
-    title: "Feature 3",
+    title: "متابعة التقدم",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
+      "تتبع تقدمك في الحفظ والمراجعة من خلال لوحة تحكم خاصة بك.",
     link: "/",
     icon: "gitHub",
   },
   {
-    title: "Feature 4",
+    title: "مرونة المواعيد",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
+      "اختر المواعيد التي تناسب جدولك الدراسي أو العملي.",
     link: "/",
     icon: "laptop",
   },
   {
-    title: "Feature 5",
+    title: "باقات متنوعة",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
+      "اختر من بين باقات اشتراك متنوعة تناسب احتياجاتك وميزانيتك.",
     link: "/",
     icon: "user",
   },
   {
-    title: "Feature 6",
+    title: "دعم فني",
     description:
-      "Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.",
+      "احصل على دعم فني ومساعدة على مدار الساعة.",
     link: "/",
     icon: "copy",
   },
@@ -103,48 +103,48 @@ export const testimonials: TestimonialType[] = [
     job: "Full Stack Developer",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
     review:
-      "The next-saas-stripe-starter repo has truly revolutionized my development workflow. With its comprehensive features and seamless integration with Stripe, I've been able to build and deploy projects faster than ever before. The documentation is clear and concise, making it easy to navigate through the setup process. I highly recommend next-saas-stripe-starter to any developer.",
+      "لقد أحدثت أكاديمية الفرقان ثورة حقيقية في رحلتي التعليمية. بفضل ميزاتها الشاملة وتكاملها السلس، تمكنت من تعلم القرآن الكريم وعلومه بشكل أسرع وأكثر فعالية من أي وقت مضى. الوثائق واضحة وموجزة، مما يسهل التنقل خلال عملية التعلم. أوصي بشدة بأكاديمية الفرقان لأي طالب علم.",
   },
   {
     name: "Alice Smith",
     job: "UI/UX Designer",
     image: "https://randomuser.me/api/portraits/women/2.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work.",
+      "بفضل أكاديمية الفرقان، تمكنت من بناء واجهات مستخدم حديثة وجذابة في وقت قياسي. توفر المنصة أساسًا متينًا لتصميمات أنيقة وبديهية، مما يسمح لي بالتركيز أكثر على الجوانب الإبداعية لعملي.",
   },
   {
     name: "David Johnson",
     job: "DevOps Engineer",
     image: "https://randomuser.me/api/portraits/men/3.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I was able to streamline the entire process and get payments up and running in no time. ",
+      "بفضل أكاديمية الفرقان، تمكنت من تبسيط العملية بأكملها والحصول على تجربة تعليمية سلسة في وقت قصير جدًا.",
   },
   {
     name: "Michael Wilson",
     job: "Project Manager",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
     review:
-      "I'm impressed by the quality of code and clear documentation of next-saas-stripe-starter. Kudos to the team!",
+      "أنا معجب بجودة الكود والوثائق الواضحة لأكاديمية الفرقان. تحية للفريق!",
   },
   {
     name: "Sophia Garcia",
     job: "Data Analyst",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
     review:
-      "next-saas-stripe-starter provided me with the tools I needed to efficiently manage user data. Thank you so much!",
+      "لقد زودتني أكاديمية الفرقان بالأدوات التي أحتاجها لإدارة بيانات المستخدمين بكفاءة. شكرًا جزيلاً لكم!",
   },
   {
     name: "Emily Brown",
     job: "Marketing Manager",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
     review:
-      "next-saas-stripe-starter has been an invaluable asset in my role as a marketing manager. With its seamless integration with Stripe, I've been able to launch targeted marketing campaigns with built-in payment functionality, allowing us to monetize our products and services more effectively.",
+      "لقد كانت أكاديمية الفرقان رصيدًا لا يقدر بثمن في دوري كمدير تسويق. بفضل تكاملها السلس، تمكنت من إطلاق حملات تسويقية مستهدفة مع وظائف دفع مدمجة، مما يسمح لنا بتحقيق الدخل من منتجاتنا وخدماتنا بشكل أكثر فعالية.",
   },
   {
     name: "Jason Stan",
     job: "Web Designer",
     image: "https://randomuser.me/api/portraits/men/9.jpg",
     review:
-      "Thanks to next-saas-stripe-starter, I've been able to create modern and attractive user interfaces in record time. The starter kit provides a solid foundation for building sleek and intuitive designs, allowing me to focus more on the creative aspects of my work.",
+      "بفضل أكاديمية الفرقان، تمكنت من بناء واجهات مستخدم حديثة وجذابة في وقت قياسي. توفر المنصة أساسًا متينًا لتصميمات أنيقة وبديهية، مما يسمح لي بالتركيز أكثر على الجوانب الإبداعية لعملي.",
   },
 ];

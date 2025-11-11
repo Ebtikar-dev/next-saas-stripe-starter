@@ -41,10 +41,10 @@ export function BillingFormButton({
     >
       {isPending ? (
         <>
-          <Icons.spinner className="mr-2 size-4 animate-spin" /> Loading...
+          <Icons.spinner className="mr-2 size-4 animate-spin" /> جار التحميل...
         </>
       ) : (
-        <>{userOffer ? "Manage Subscription" : "Upgrade"}</>
+        <>{userOffer ? "إدارة الاشتراك" : "ترقية"}</>
       )}
     </Button>
   );

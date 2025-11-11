@@ -27,7 +27,7 @@ export default function BentoGrid() {
                 </span>
               </div>
               <h2 className="mt-6 text-center font-heading text-3xl md:text-4xl lg:text-[40px]">
-                Customizable
+                قابل للتخصيص
               </h2>
             </div>
           </div>
@@ -90,11 +90,10 @@ export default function BentoGrid() {
               </div>
               <div className="relative z-10 mt-8 space-y-1.5 text-center">
                 <h2 className="text-lg font-medium text-foreground">
-                  Secure by default
+                  آمن بشكل افتراضي
                 </h2>
                 <p className="text-muted-foreground">
-                  Provident fugit and vero voluptate. magnam magni doloribus
-                  dolores voluptates a sapiente nisi.
+                  نظام آمن وموثوق لحماية بياناتك ومعلوماتك الشخصية.
                 </p>
               </div>
             </div>
@@ -187,11 +186,10 @@ export default function BentoGrid() {
               </div>
               <div className="relative z-10 mt-8 space-y-1.5 text-center">
                 <h2 className="text-lg font-medium text-foreground">
-                  Faster than light
+                  أسرع من الضوء
                 </h2>
                 <p className="text-muted-foreground">
-                  Provident fugit vero voluptate. magnam magni doloribus dolores
-                  voluptates inventore nisi.
+                  تجربة سريعة وسلسة تضمن لك أفضل أداء.
                 </p>
               </div>
             </div>
@@ -219,11 +217,10 @@ export default function BentoGrid() {
                 </div>
                 <div className="space-y-2">
                   <h2 className="text-lg font-medium text-foreground">
-                    Faster than light
+                    أداء فائق السرعة
                   </h2>
                   <p className="text-muted-foreground">
-                    Provident fugit vero voluptate. Voluptates a sapiente
-                    inventore nisi.
+                    استمتع بتجربة استخدام لا مثيل لها مع سرعة استجابة فائقة.
                   </p>
                 </div>
               </div>
@@ -304,11 +301,10 @@ export default function BentoGrid() {
                 </div>
                 <div className="space-y-2">
                   <h2 className="text-lg font-medium text-foreground">
-                    Keep your loved ones safe
+                    حافظ على أمان أحبائك
                   </h2>
                   <p className="text-muted-foreground">
-                    Voluptate. magnam magni doloribus dolores voluptates a
-                    sapiente.
+                    نحن نولي أمان بياناتك وخصوصيتك أقصى درجات الاهتمام.
                   </p>
                 </div>
               </div>

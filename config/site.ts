@@ -4,44 +4,44 @@ import { env } from "@/env.mjs";
 const site_url = env.NEXT_PUBLIC_APP_URL;
 
 export const siteConfig: SiteConfig = {
-  name: "SaaS Starter",
+  name: "أكاديمية الفُرقان لأهل القرآن",
   description:
-    "Get your project off to an explosive start with SaaS Starter! Harness the power of Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui and Stripe to build your next big thing.",
+    "منصة تعليمية إلكترونية متكاملة تهدف إلى تعليم القرآن الكريم وعلومه (تفسير، تجويد، حفظ...) تقدّم تجربة مرنة وسهلة للطالب منذ التسجيل وحتى حضور المحاضرات والدفع الإلكتروني.",
   url: site_url,
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
     twitter: "https://twitter.com/miickasmt",
     github: "https://github.com/mickasmt/next-saas-stripe-starter",
   },
-  mailSupport: "support@saas-starter.com",
+  mailSupport: "support@alfurqanacademy.com",
 };
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Company",
+    title: "الشركة",
     items: [
-      { title: "About", href: "#" },
-      { title: "Enterprise", href: "#" },
-      { title: "Terms", href: "/terms" },
-      { title: "Privacy", href: "/privacy" },
+      { title: "عنا", href: "#" },
+      { title: "المشاريع", href: "#" },
+      { title: "الشروط", href: "/terms" },
+      { title: "الخصوصية", href: "/privacy" },
     ],
   },
   {
-    title: "Product",
+    title: "المنتج",
     items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
+      { title: "الأمان", href: "#" },
+      { title: "التخصيص", href: "#" },
+      { title: "العملاء", href: "#" },
+      { title: "سجل التغييرات", href: "#" },
     ],
   },
   {
-    title: "Docs",
+    title: "المستندات",
     items: [
-      { title: "Introduction", href: "#" },
-      { title: "Installation", href: "#" },
-      { title: "Components", href: "#" },
-      { title: "Code Blocks", href: "#" },
+      { title: "مقدمة", href: "#" },
+      { title: "التثبيت", href: "#" },
+      { title: "المكونات", href: "#" },
+      { title: "أمثلة الكود", href: "#" },
     ],
   },
 ];

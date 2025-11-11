@@ -94,7 +94,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                   rel="noreferrer"
                 >
                   <Icons.gitHub className="size-7" />
-                  <span className="sr-only">GitHub</span>
+                  <span className="sr-only">جيت هاب</span>
                 </Link>
               </div>
             </div>
@@ -111,7 +111,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 size="sm"
                 rounded="full"
               >
-                <span>Dashboard</span>
+                <span>لوحة التحكم</span>
               </Button>
             </Link>
           ) : status === "unauthenticated" ? (
@@ -122,7 +122,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
               rounded="full"
               onClick={() => setShowSignInModal(true)}
             >
-              <span>Sign In</span>
+              <span>تسجيل الدخول</span>
               <Icons.arrowRight className="size-4" />
             </Button>
           ) : (
