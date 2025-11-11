@@ -16,6 +16,8 @@ import { DocsSearch } from "@/components/docs/search";
 import { ModalContext } from "@/components/modals/providers";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+import { ModeToggle } from "@/components/layout/mode-toggle";
+import * as React from "react";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -99,6 +101,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
               </div>
             </div>
           ) : null}
+          <ModeToggle />
 
           {session ? (
             <Link
