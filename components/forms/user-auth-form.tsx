@@ -39,12 +39,11 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
 
     try {
       if (type === "register") {
-        // For registration, we need name as well - using email as name for now
-        await signup(data.email.split('@')[0], data.email.toLowerCase(), "");
-        toast.success("تم إرسال رمز التحقق إلى بريدك الإلكتروني");
+        // For registration, we need name as well
+        await signup("", data.email.toLowerCase(), "");
       } else {
-        // For login, we need password - this is a placeholder since we're focusing on Google OAuth
-        toast.info("يرجى استخدام تسجيل الدخول عبر جوجل");
+        // For login, we need password
+        await login(data.email.toLowerCase(), "");
       }
     } catch (error) {
       console.error("Auth error:", error);
