@@ -3,65 +3,65 @@ import { DocsConfig } from "types";
 export const docsConfig: DocsConfig = {
   mainNav: [
     {
-      title: "Documentation",
+      title: "المستندات",
       href: "/docs",
     },
     {
-      title: "Guides",
+      title: "الأدلة",
       href: "/guides",
     },
   ],
   sidebarNav: [
     {
-      title: "Getting Started",
+      title: "البدء",
       items: [
         {
-          title: "Introduction",
+          title: "مقدمة",
           href: "/docs",
         },
         {
-          title: "Installation",
+          title: "التثبيت",
           href: "/docs/installation",
         },
       ],
     },
     {
-      title: "Configuration",
+      title: "الإعدادات",
       items: [
         {
-          title: "Authentification",
+          title: "المصادقة",
           href: "/docs/configuration/authentification",
         },
         {
-          title: "Blog",
+          title: "المدونة",
           href: "/docs/configuration/blog",
         },
         {
-          title: "Components",
+          title: "المكونات",
           href: "/docs/configuration/components",
         },
         {
-          title: "Config files",
+          title: "ملفات الإعدادات",
           href: "/docs/configuration/config-files",
         },
         {
-          title: "Database",
+          title: "قاعدة البيانات",
           href: "/docs/configuration/database",
         },
         {
-          title: "Email",
+          title: "البريد الإلكتروني",
           href: "/docs/configuration/email",
         },
         {
-          title: "Layouts",
+          title: "التخطيطات",
           href: "/docs/configuration/layouts",
         },
         {
-          title: "Markdown files",
+          title: "ملفات Markdown",
           href: "/docs/configuration/markdown-files",
         },
         {
-          title: "Subscriptions",
+          title: "الاشتراكات",
           href: "/docs/configuration/subscriptions",
         },
       ],

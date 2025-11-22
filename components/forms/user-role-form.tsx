@@ -54,13 +54,13 @@ export function UserRoleForm({ user }: UserNameFormProps) {
       const { status } = await updateUserRoleWithId(data);
 
       if (status !== "success") {
-        toast.error("Something went wrong.", {
-          description: "Your role was not updated. Please try again.",
+        toast.error("حدث خطأ ما.", {
+          description: "لم يتم تحديث دورك. الرجاء المحاولة مرة أخرى.",
         });
       } else {
         await update();
         setUpdated(false);
-        toast.success("Your role has been updated.");
+        toast.success("تم تحديث دورك بنجاح.");
       }
     });
   };
@@ -69,8 +69,8 @@ export function UserRoleForm({ user }: UserNameFormProps) {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
         <SectionColumns
-          title="Your Role"
-          description="Select the role what you want for test the app."
+          title="دورك"
+          description="حدد الدور الذي تريده لاختبار التطبيق."
         >
           <div className="flex w-full items-center gap-2">
             <FormField
@@ -78,7 +78,7 @@ export function UserRoleForm({ user }: UserNameFormProps) {
               name="role"
               render={({ field }) => (
                 <FormItem className="w-full space-y-0">
-                  <FormLabel className="sr-only">Role</FormLabel>
+                  <FormLabel className="sr-only">الدور</FormLabel>
                   <Select
                     // TODO:(FIX) Option value not update. Use useState for the moment
                     onValueChange={(value: UserRole) => {
@@ -91,7 +91,7 @@ export function UserRoleForm({ user }: UserNameFormProps) {
                   >
                     <FormControl>
                       <SelectTrigger className="w-full">
-                        <SelectValue placeholder="Select a role" />
+                        <SelectValue placeholder="اختر دورًا" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -116,15 +116,15 @@ export function UserRoleForm({ user }: UserNameFormProps) {
                 <Icons.spinner className="size-4 animate-spin" />
               ) : (
                 <p>
-                  Save
-                  <span className="hidden sm:inline-flex">&nbsp;Changes</span>
+                  حفظ
+                  <span className="hidden sm:inline-flex">&nbsp;التغييرات</span>
                 </p>
               )}
             </Button>
           </div>
           <div className="flex flex-col justify-between p-1">
             <p className="text-[13px] text-muted-foreground">
-              Remove this field on real production
+              قم بإزالة هذا الحقل في الإنتاج الفعلي
             </p>
           </div>
         </SectionColumns>

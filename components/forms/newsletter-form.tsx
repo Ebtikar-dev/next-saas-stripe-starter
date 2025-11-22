@@ -18,7 +18,7 @@ import { toast } from "@/components/ui/use-toast";
 
 const FormSchema = z.object({
   email: z.string().email({
-    message: "Enter a valid email.",
+    message: "الرجاء إدخال بريد إلكتروني صحيح.",
   }),
 });
 
@@ -33,7 +33,7 @@ export function NewsletterForm() {
   function onSubmit(data: z.infer<typeof FormSchema>) {
     form.reset();
     toast({
-      title: "You submitted the following values:",
+      title: "لقد قمت بإرسال القيم التالية:",
       description: (
         <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
           <code className="text-white">{JSON.stringify(data, null, 2)}</code>
@@ -53,7 +53,7 @@ export function NewsletterForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Subscribe to our newsletter</FormLabel>
+              <FormLabel>اشترك في نشرتنا الإخبارية</FormLabel>
               <FormControl>
                 <Input
                   type="email"
@@ -67,7 +67,7 @@ export function NewsletterForm() {
           )}
         />
         <Button type="submit" size="sm" rounded="full" className="px-4">
-          Subscribe
+          اشترك
         </Button>
       </form>
     </Form>

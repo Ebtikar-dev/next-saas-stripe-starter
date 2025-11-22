@@ -42,7 +42,7 @@ export function NavMobile() {
       <button
         onClick={() => setOpen(!open)}
         className={cn(
-          "fixed right-2 top-2.5 z-50 rounded-full p-2 transition-colors duration-200 hover:bg-muted focus:outline-none active:bg-muted md:hidden",
+          "fixed left-2 top-2.5 z-50 rounded-full p-2 transition-colors duration-200 hover:bg-muted focus:outline-none active:bg-muted md:hidden",
           open && "hover:bg-muted active:bg-muted",
         )}
       >
@@ -81,7 +81,7 @@ export function NavMobile() {
                     onClick={() => setOpen(false)}
                     className="flex w-full font-medium capitalize"
                   >
-                    Admin
+                    لوحة تحكم المسؤول
                   </Link>
                 </li>
               ) : null}
@@ -92,7 +92,7 @@ export function NavMobile() {
                   onClick={() => setOpen(false)}
                   className="flex w-full font-medium capitalize"
                 >
-                  Dashboard
+                  لوحة القيادة
                 </Link>
               </li>
             </>
@@ -104,7 +104,7 @@ export function NavMobile() {
                   onClick={() => setOpen(false)}
                   className="flex w-full font-medium capitalize"
                 >
-                  Login
+                  تسجيل الدخول
                 </Link>
               </li>
 
@@ -114,7 +114,7 @@ export function NavMobile() {
                   onClick={() => setOpen(false)}
                   className="flex w-full font-medium capitalize"
                 >
-                  Sign up
+                  التسجيل
                 </Link>
               </li>
             </>
@@ -127,11 +127,11 @@ export function NavMobile() {
           </div>
         ) : null}
 
-        <div className="mt-5 flex items-center justify-end space-x-4">
-          <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
-            <Icons.gitHub className="size-6" />
-            <span className="sr-only">GitHub</span>
-          </Link>
+        <div className="mt-5 flex items-center justify-start space-x-4">
+          {/*<Link href={siteConfig.links.github} target="_blank" rel="noreferrer">*/}
+          {/*  <Icons.gitHub className="size-6" />*/}
+          {/*  <span className="sr-only">جيت هاب</span>*/}
+          {/*</Link>*/}
           <ModeToggle />
         </div>
       </nav>
