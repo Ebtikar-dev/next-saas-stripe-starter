@@ -16,6 +16,8 @@ import { DocsSearch } from "@/components/docs/search";
 import { ModalContext } from "@/components/modals/providers";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+import { ModeToggle } from "@/components/layout/mode-toggle";
+import * as React from "react";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -49,12 +51,11 @@ export function NavBar({ scroll = false }: NavBarProps) {
       >
         <div className="flex gap-6 md:gap-10">
           <Link href="/" className="flex items-center space-x-1.5">
-            <Icons.logo />
+            {/*<Icons.logo />*/}
             <span className="font-urban text-xl font-bold">
               {siteConfig.name}
             </span>
           </Link>
-
           {links && links.length > 0 ? (
             <nav className="hidden gap-6 md:flex">
               {links.map((item, index) => (
@@ -73,32 +74,35 @@ export function NavBar({ scroll = false }: NavBarProps) {
                   {item.title}
                 </Link>
               ))}
+              <ModeToggle />
+
             </nav>
           ) : null}
+
         </div>
 
         <div className="flex items-center space-x-3">
           {/* right header for docs */}
-          {documentation ? (
-            <div className="hidden flex-1 items-center space-x-4 sm:justify-end lg:flex">
-              <div className="hidden lg:flex lg:grow-0">
-                <DocsSearch />
-              </div>
-              <div className="flex lg:hidden">
-                <Icons.search className="size-6 text-muted-foreground" />
-              </div>
-              <div className="flex space-x-4">
-                <Link
-                  href={siteConfig.links.github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Icons.gitHub className="size-7" />
-                  <span className="sr-only">GitHub</span>
-                </Link>
-              </div>
-            </div>
-          ) : null}
+          {/*{documentation ? (*/}
+          {/*  <div className="hidden flex-1 items-center space-x-4 sm:justify-end lg:flex">*/}
+          {/*    <div className="hidden lg:flex lg:grow-0">*/}
+          {/*      <DocsSearch />*/}
+          {/*    </div>*/}
+          {/*    <div className="flex lg:hidden">*/}
+          {/*      <Icons.search className="size-6 text-muted-foreground" />*/}
+          {/*    </div>*/}
+          {/*    <div className="flex space-x-4">*/}
+          {/*      <Link*/}
+          {/*        href={siteConfig.links.github}*/}
+          {/*        target="_blank"*/}
+          {/*        rel="noreferrer"*/}
+          {/*      >*/}
+          {/*        <Icons.gitHub className="size-7" />*/}
+          {/*        <span className="sr-only">جيت هاب</span>*/}
+          {/*      </Link>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*) : null}*/}
 
           {session ? (
             <Link
@@ -111,7 +115,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 size="sm"
                 rounded="full"
               >
-                <span>Dashboard</span>
+                <span>لوحة التحكم</span>
               </Button>
             </Link>
           ) : status === "unauthenticated" ? (
@@ -122,7 +126,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
               rounded="full"
               onClick={() => setShowSignInModal(true)}
             >
-              <span>Sign In</span>
+              <span>تسجيل الدخول</span>
               <Icons.arrowRight className="size-4" />
             </Button>
           ) : (

@@ -48,13 +48,13 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
     setIsLoading(false);
 
     if (!signInResult?.ok) {
-      return toast.error("Something went wrong.", {
-        description: "Your sign in request failed. Please try again."
+      return toast.error("حدث خطأ ما.", {
+        description: "فشل طلب تسجيل الدخول الخاص بك. الرجاء المحاولة مرة أخرى."
       });
     }
 
-    return toast.success("Check your email", {
-      description: "We sent you a login link. Be sure to check your spam too.",
+    return toast.success("تحقق من بريدك الإلكتروني", {
+      description: "لقد أرسلنا لك رابط تسجيل الدخول. تأكد من مراجعة مجلد الرسائل غير المرغوب فيها أيضًا.",
     });
 =======
     try {
@@ -94,7 +94,7 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
         <div className="grid gap-2">
           <div className="grid gap-1">
             <Label className="sr-only" htmlFor="email">
-              Email
+              البريد الإلكتروني
             </Label>
             <Input
               id="email"
@@ -116,7 +116,7 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
             {isLoading && (
               <Icons.spinner className="mr-2 size-4 animate-spin" />
             )}
-            {type === "register" ? "Sign Up with Email" : "Sign In with Email"}
+            {type === "register" ? "التسجيل بالبريد الإلكتروني" : "تسجيل الدخول بالبريد الإلكتروني"}
           </button>
         </div>
       </form>
@@ -126,7 +126,7 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
         </div>
         <div className="relative flex justify-center text-xs uppercase">
           <span className="bg-background px-2 text-muted-foreground">
-            Or continue with
+            أو أكمل باستخدام
           </span>
         </div>
       </div>
@@ -144,7 +144,7 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
         ) : (
           <Icons.google className="mr-2 size-4" />
         )}{" "}
-        Google
+        جوجل
       </button>
     </div>
   );
