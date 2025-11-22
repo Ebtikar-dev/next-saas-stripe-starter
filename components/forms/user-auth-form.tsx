@@ -37,103 +37,20 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
   async function onSubmit(data: FormData) {
     setIsLoading(true);
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    const signInResult = await signIn("resend", {
-      email: data.email.toLowerCase(),
-      redirect: false,
-      callbackUrl: searchParams?.get("from") || "/dashboard",
-    });
-
-    setIsLoading(false);
-
-    if (!signInResult?.ok) {
-      return toast.error("حدث خطأ ما.", {
-        description: "فشل طلب تسجيل الدخول الخاص بك. الرجاء المحاولة مرة أخرى."
-      });
-    }
-
-    return toast.success("تحقق من بريدك الإلكتروني", {
-      description: "لقد أرسلنا لك رابط تسجيل الدخول. تأكد من مراجعة مجلد الرسائل غير المرغوب فيها أيضًا.",
-    });
-=======
     try {
       if (type === "register") {
-        // For registration, we need name as well
-        await signup("", data.email.toLowerCase(), "");
+        // For registration, we need name as well - using email as name for now
+        await signup(data.email.split('@')[0], data.email.toLowerCase(), "");
+        toast.success("تم إرسال رمز التحقق إلى بريدك الإلكتروني");
       } else {
-        // For login, we need password
-        await login(data.email.toLowerCase(), "");
+        // For login, we need password - this is a placeholder since we're focusing on Google OAuth
+        toast.info("يرجى استخدام تسجيل الدخول عبر جوجل");
       }
     } catch (error) {
       console.error("Auth error:", error);
     } finally {
       setIsLoading(false);
     }
->>>>>>> Stashed changes
-=======
-    try {
-      if (type === "register") {
-        // For registration, we need name as well
-        await signup("", data.email.toLowerCase(), "");
-      } else {
-        // For login, we need password
-        await login(data.email.toLowerCase(), "");
-      }
-    } catch (error) {
-      console.error("Auth error:", error);
-    } finally {
-      setIsLoading(false);
-    }
->>>>>>> Stashed changes
-=======
-    try {
-      if (type === "register") {
-        // For registration, we need name as well
-        await signup("", data.email.toLowerCase(), "");
-      } else {
-        // For login, we need password
-        await login(data.email.toLowerCase(), "");
-      }
-    } catch (error) {
-      console.error("Auth error:", error);
-    } finally {
-      setIsLoading(false);
-    }
->>>>>>> Stashed changes
-=======
-    try {
-      if (type === "register") {
-        // For registration, we need name as well
-        await signup("", data.email.toLowerCase(), "");
-      } else {
-        // For login, we need password
-        await login(data.email.toLowerCase(), "");
-      }
-    } catch (error) {
-      console.error("Auth error:", error);
-    } finally {
-      setIsLoading(false);
-    }
->>>>>>> Stashed changes
-=======
-    try {
-      if (type === "register") {
-        // For registration, we need name as well
-        await signup("", data.email.toLowerCase(), "");
-      } else {
-        // For login, we need password
-        await login(data.email.toLowerCase(), "");
-      }
-    } catch (error) {
-      console.error("Auth error:", error);
-    } finally {
-      setIsLoading(false);
-    }
->>>>>>> Stashed changes
   }
 
   return (
