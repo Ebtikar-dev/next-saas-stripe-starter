@@ -3,7 +3,6 @@
 import * as React from "react";
 import { useSearchParams } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { signIn } from "next-auth/react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
@@ -14,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { Icons } from "@/components/shared/icons";
+import { useAuth } from "@/hooks/use-auth";
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {
   type?: string;
@@ -32,10 +32,12 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [isGoogleLoading, setIsGoogleLoading] = React.useState<boolean>(false);
   const searchParams = useSearchParams();
+  const { login, signup, loginWithGoogle } = useAuth();
 
   async function onSubmit(data: FormData) {
     setIsLoading(true);
 
+<<<<<<< Updated upstream
     const signInResult = await signIn("resend", {
       email: data.email.toLowerCase(),
       redirect: false,
@@ -53,6 +55,21 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
     return toast.success("Check your email", {
       description: "We sent you a login link. Be sure to check your spam too.",
     });
+=======
+    try {
+      if (type === "register") {
+        // For registration, we need name as well
+        await signup("", data.email.toLowerCase(), "");
+      } else {
+        // For login, we need password
+        await login(data.email.toLowerCase(), "");
+      }
+    } catch (error) {
+      console.error("Auth error:", error);
+    } finally {
+      setIsLoading(false);
+    }
+>>>>>>> Stashed changes
   }
 
   return (
@@ -102,7 +119,7 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
         className={cn(buttonVariants({ variant: "outline" }))}
         onClick={() => {
           setIsGoogleLoading(true);
-          signIn("google");
+          loginWithGoogle();
         }}
         disabled={isLoading || isGoogleLoading}
       >
