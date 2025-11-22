@@ -38,6 +38,7 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
     setIsLoading(true);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     const signInResult = await signIn("resend", {
       email: data.email.toLowerCase(),
       redirect: false,
@@ -55,6 +56,21 @@ export function UserAuthForm({ className, type, ...props }: UserAuthFormProps) {
     return toast.success("Check your email", {
       description: "We sent you a login link. Be sure to check your spam too.",
     });
+=======
+    try {
+      if (type === "register") {
+        // For registration, we need name as well
+        await signup("", data.email.toLowerCase(), "");
+      } else {
+        // For login, we need password
+        await login(data.email.toLowerCase(), "");
+      }
+    } catch (error) {
+      console.error("Auth error:", error);
+    } finally {
+      setIsLoading(false);
+    }
+>>>>>>> Stashed changes
 =======
     try {
       if (type === "register") {
