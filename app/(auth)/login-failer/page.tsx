@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { Metadata } from "next";
+import Link from "next/link";
 
 import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/shared/icons";
@@ -14,7 +14,10 @@ export default function LoginFailedPage() {
     <div className="container flex h-screen w-screen flex-col items-center justify-center">
       <Link
         href="/login"
-        className={buttonVariants({ variant: "outline", size: "sm" }) + " absolute left-4 top-4 md:left-8 md:top-8"}
+        className={
+          buttonVariants({ variant: "outline", size: "sm" }) +
+          " absolute left-4 top-4 md:left-8 md:top-8"
+        }
       >
         <>
           <Icons.chevronLeft className="mr-2 size-4" />
@@ -28,7 +31,8 @@ export default function LoginFailedPage() {
             Login Failed
           </h1>
           <p className="text-sm text-muted-foreground">
-            We couldn't sign you in. Please try again or contact support if the problem persists.
+            We couldn&apos;t sign you in. Please try again or contact support if
+            the problem persists.
           </p>
         </div>
         <Link href="/login" className={buttonVariants()}>

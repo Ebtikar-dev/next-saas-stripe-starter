@@ -35,12 +35,13 @@ export default async function HeroLanding() {
           target="_blank"
         >
           <span className="mr-3">🎉</span>
-          <span className="hidden md:flex">منصة الفرقان</span><Icons.twitter className="ml-2 size-3.5" />
+          <span className="hidden md:flex">منصة الفرقان</span>
+          <Icons.twitter className="ml-2 size-3.5" />
         </Link>
 
         <h1 className="text-balance font-urban text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]">
           ابدأ رحلتك التعليمية بقوة مع{" "}
-          <span className="text-gradient_indigo-purple font-extrabold">
+          <span className="text-gradient_primary font-extrabold">
             أكاديمية الفُرقان
           </span>
         </h1>
@@ -49,7 +50,8 @@ export default async function HeroLanding() {
           className="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8"
           style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
         >
-          منصة تعليمية متكاملة لتعليم القرآن الكريم وعلومه، تقدم تجربة مرنة وسهلة للطلاب من التسجيل حتى حضور المحاضرات والدفع الإلكتروني.
+          منصة تعليمية متكاملة لتعليم القرآن الكريم وعلومه، تقدم تجربة مرنة
+          وسهلة للطلاب من التسجيل حتى حضور المحاضرات والدفع الإلكتروني.
         </p>
 
         <div

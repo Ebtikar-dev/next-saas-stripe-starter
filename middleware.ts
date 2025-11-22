@@ -1,11 +1,11 @@
-import { auth as nextAuthMiddleware } from "@/auth";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { auth as nextAuthMiddleware } from "@/auth";
 
 export default async function middleware(req: NextRequest) {
   // For now, keep NextAuth middleware for backward compatibility
   // In the future, you might want to replace this entirely with backend auth
-  return nextAuthMiddleware(req);
+  return nextAuthMiddleware(req as any);
 }
 
 export const config = {

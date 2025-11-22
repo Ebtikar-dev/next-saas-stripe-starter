@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext } from "react";
+import * as React from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -13,11 +14,10 @@ import { useScroll } from "@/hooks/use-scroll";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { DocsSearch } from "@/components/docs/search";
+import { ModeToggle } from "@/components/layout/mode-toggle";
 import { ModalContext } from "@/components/modals/providers";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
-import { ModeToggle } from "@/components/layout/mode-toggle";
-import * as React from "react";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -50,9 +50,14 @@ export function NavBar({ scroll = false }: NavBarProps) {
         large={documentation}
       >
         <div className="flex gap-6 md:gap-10">
-          <Link href="/" className="flex items-center space-x-1.5">
-            {/*<Icons.logo />*/}
-            <span className="font-urban text-xl font-bold">
+          <Link href="/" className="flex items-center space-x-2">
+            <img
+              src="/logo.svg"
+              alt={siteConfig.name}
+              className="h-8 w-auto"
+              loading="lazy"
+            />
+            <span className="text-gradient_primary font-urban text-xl font-bold">
               {siteConfig.name}
             </span>
           </Link>
@@ -75,10 +80,8 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 </Link>
               ))}
               <ModeToggle />
-
             </nav>
           ) : null}
-
         </div>
 
         <div className="flex items-center space-x-3">
